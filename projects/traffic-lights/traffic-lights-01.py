@@ -18,7 +18,7 @@ STATES = {
     'caution':  State([RED, AMBER], 1, 'stop')
 }
 
-state = 'stop'
+state = STATES['stop']
 
 while True:
     for light in LIGHTS:
