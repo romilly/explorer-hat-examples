@@ -1,4 +1,6 @@
-# Examples for the Pimoroni Explorer Hat Pro
+# Examples for **Explorer Hat Tricks**
+
+A forthcoming ebook about the Pimoroni Explorer Hat Pro
 
 Disclaimer: I have been a follower and customer of Pimoroni for years, but I have no official connection with them.
 
