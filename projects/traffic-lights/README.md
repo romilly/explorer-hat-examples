@@ -19,3 +19,9 @@ You will need:
 
 ![Traffic Light Wiring diagram](../../docs/images/traffic-lights-01_bb.png)
 
+## Run it
+
+in this directory, run `python3 traffic-lights-01.py `
+
+When you've finished, type `Ctrl-C` to exit the program.
+
