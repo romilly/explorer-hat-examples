@@ -11,3 +11,4 @@ while True:
     hat.light.green.on()
     sleep(0.5)
     hat.light.blue.on()
+    sleep(0.5)
