@@ -110,6 +110,7 @@
 </node>
 <node TEXT="Resources" POSITION="left" ID="Freemind_Link_1594441695" CREATED="1273319832507" MODIFIED="1296303609303" COLOR="#33ff33">
 <icon BUILTIN="password"/>
+<node TEXT="https://smile.amazon.co.uk/Amplifier-Breakout-Portable-Weighing-Raspberry/dp/B07L81BQB6/" ID="ID_980982901" CREATED="1575714238397" MODIFIED="1575714238397" LINK="https://smile.amazon.co.uk/Amplifier-Breakout-Portable-Weighing-Raspberry/dp/B07L81BQB6/"/>
 </node>
 </node>
 </map>
