@@ -14,7 +14,7 @@ another core interface.
 requires external components.
 1. Document which experiments work with
     1. Explorer HAT Pro
-    1. Explorer HAT (oroginal version)
+    1. Explorer HAT (original version)
     1. Explorer pHat
 
 ## Someday™
