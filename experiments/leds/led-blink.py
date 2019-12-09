@@ -1,3 +1,5 @@
+#! /usr/bin/python3
+
 import explorerhat as eh
 from time import sleep
 
