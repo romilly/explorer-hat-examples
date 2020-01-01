@@ -3,9 +3,8 @@ from time import sleep
 
 
 while True:
-    if explorerhat.touch.one.is_pressed():
-        explorerhat.output.one.on()
+    if explorerhat.touch.three.is_pressed():
+        explorerhat.light.red.on()
     else:
-        explorerhat.output.one.off()
+        explorerhat.light.red.off()
     sleep(0.1)
-
