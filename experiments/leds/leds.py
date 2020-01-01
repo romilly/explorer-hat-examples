@@ -1,14 +1,14 @@
-import explorerhat as hat
+import explorerhat as eh
 from time import sleep
 
 
 while True:
-    hat.light.off()
-    hat.light.red.on()
+    eh.light.off()
+    eh.light.red.on()
     sleep(0.5)
-    hat.light.yellow.on()
+    eh.light.yellow.on()
     sleep(0.5)
-    hat.light.green.on()
+    eh.light.green.on()
     sleep(0.5)
-    hat.light.blue.on()
+    eh.light.blue.on()
     sleep(0.5)

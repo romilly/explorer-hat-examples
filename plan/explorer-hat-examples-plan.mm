@@ -100,6 +100,8 @@
 </node>
 <node TEXT="Fridge" ID="Freemind_Link_1954142386" CREATED="1266488793745" MODIFIED="1266488959040" COLOR="#9679df">
 <icon BUILTIN="desktop_new"/>
+<node TEXT="https://shop.pimoroni.com/products/adafruit-gpio-expander-bonnet-16-additional-i-o-over-i2c" ID="ID_1482432854" CREATED="1575970063912" MODIFIED="1575970063912" LINK="https://shop.pimoroni.com/products/adafruit-gpio-expander-bonnet-16-additional-i-o-over-i2c"/>
+<node TEXT="https://www.sparkfun.com/products/12918" ID="ID_1242892956" CREATED="1575970204474" MODIFIED="1575970204474" LINK="https://www.sparkfun.com/products/12918"/>
 </node>
 <node TEXT="discoveries" ID="ID_1011483963" CREATED="1485097938875" MODIFIED="1485097984855" COLOR="#00cc33">
 <icon BUILTIN="very_positive"/>
