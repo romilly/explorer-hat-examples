@@ -1,6 +1,7 @@
 import explorerhat
 from time import sleep
 
+
 while True:
     explorerhat.light.off()
     if explorerhat.touch.one.is_pressed():

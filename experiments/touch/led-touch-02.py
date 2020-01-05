@@ -1,6 +1,7 @@
 import explorerhat
 from time import sleep
 
+
 while True:
     if explorerhat.touch.three.is_pressed():
         explorerhat.light.red.on()
