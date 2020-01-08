@@ -48,3 +48,23 @@ MORSE_CODE = {
     '=': '-...-',
     '@': '.--.-.',
 }
+
+LENGTHS = { '.' : 1, '-': 3}
+
+
+def pr(length, value):
+    print(length*[value])
+
+
+def morse(text, send):
+    for word in text.split():
+        for ch in word:
+            for m in MORSE_CODE[ch]:
+                send(LENGTHS[m], 1)
+                send(1, 0)
+            send(2, 0)
+        send(4,0)
+
+print morse('SOS', pr)
+
+
