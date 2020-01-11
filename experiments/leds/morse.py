@@ -1,3 +1,6 @@
+import explorerhat as eh
+from time import sleep
+
 MORSE_CODE = {
     'A': '.-',
     'B': '-...',
@@ -51,9 +54,16 @@ MORSE_CODE = {
 
 LENGTHS = { '.' : 1, '-': 3}
 
+UNIT_DURATION = 0.2
 
-def pr(length, value):
-    print(length*[value])
+def flash(length, value):
+    if value == 0:
+        eh.light.red.off()
+        sleep(length * UNIT_DURATION)
+        return
+    eh.light.red.on()
+    sleep(length * UNIT_DURATION)
+
 
 
 def morse(text, send):
@@ -65,6 +75,5 @@ def morse(text, send):
             send(2, 0)
         send(4,0)
 
-print morse('SOS', pr)
-
+morse('SOS', flash)
 
