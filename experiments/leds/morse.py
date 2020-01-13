@@ -1,5 +1,10 @@
 import explorerhat as eh
 from time import sleep
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(18, GPIO.OUT)
+buzzer = GPIO.PWM(18, 400)
+
 
 MORSE_CODE = {
     'A': '.-',
@@ -64,6 +69,13 @@ def flash(length, value):
     eh.light.red.on()
     sleep(length * UNIT_DURATION)
 
+def beep(length, value):
+    if value == 0:
+        buzzer.stop()
+        sleep(length * UNIT_DURATION)
+        return
+    buzzer.start(50)
+    sleep(length * UNIT_DURATION)
 
 
 def morse(text, send):
@@ -75,5 +87,4 @@ def morse(text, send):
             send(2, 0)
         send(4,0)
 
-morse('SOS', flash)
-
+morse('SOS', beep)
