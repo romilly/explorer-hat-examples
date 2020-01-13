@@ -24,7 +24,7 @@ tof.start_ranging(1)  # Start ranging
 
 # Grab the range in mm, this function will block until
 # a reading is returned.
-for i in range(10):
+for i in range(100):
     distance_in_mm = tof.get_distance()
     print(distance_in_mm)
     sleep(1)
