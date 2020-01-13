@@ -28,8 +28,8 @@ def beep(seconds, freq):
 WAITING = 'waiting'
 WORKING = 'working'
 RESTING = 'resting'
-DURATION = 60*25 # 25 mins
-BREAK = 60*5
+DURATION =  25 # 60*25 # 25 mins
+BREAK = 5 # 60*5
 RANGE_LIMIT = 400 # if range is closer than that, I'm at my desk
 
 
@@ -42,8 +42,11 @@ ranges = 5*[2 * RANGE_LIMIT]
 
 def at_desk():
     global ranges
-    ranges = ranges[1:]+[vl53.range]
-    return average(ranges) > RANGE_LIMIT
+    range = vl53.range
+    while range == 0:
+        range = vl53.range
+    ranges = ranges[1:]+[range]
+    return average(ranges) < RANGE_LIMIT
 
 
 def check_waiting(time):
@@ -57,6 +60,7 @@ def check_working(time):
     time += 1
     if time > DURATION:
         if not at_desk():
+            print('resting')
             return 0, RESTING
         else:
             beep(1, 400)
@@ -68,7 +72,8 @@ def check_working(time):
 
 
 def check_resting(time):
-    if at_desk:
+    if at_desk():
+        print('working')
         return 0, WORKING
     time += 1
     if time > BREAK:
@@ -78,15 +83,20 @@ def check_resting(time):
     return time, RESTING
 
 
-def tick(state, time):
+def tick(time, state):
     if state == WAITING:
         return check_waiting(time)
     if state == WORKING:
         return check_working(time)
     if state == RESTING:
         return check_resting(time)
+    raise Exception('invalid state %s' % state)
 
-
+count = 0
 while True:
     sleep(0.1)
     time_now, current_state = tick(time_now, current_state)
+    count += 1
+    if count == 10:
+        print(ranges, time_now, current_state)
+        count = 0
