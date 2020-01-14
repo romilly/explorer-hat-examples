@@ -1,5 +1,7 @@
 # Examples for *Explorer Hat Tricks*
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K61CLW1)
+
 
 **Disclaimer**: I have been a follower and customer of Pimoroni for years, but I have no official connection with them.
 
