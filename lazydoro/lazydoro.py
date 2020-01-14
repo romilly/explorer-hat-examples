@@ -28,8 +28,8 @@ def beep(seconds, freq):
 WAITING = 'waiting'
 WORKING = 'working'
 RESTING = 'resting'
-DURATION =  25 # 60*25 # 25 mins
-BREAK = 5 # 60*5
+DURATION =  60*25 # 25 mins
+BREAK = 60*5
 RANGE_LIMIT = 400 # if range is closer than that, I'm at my desk
 
 
