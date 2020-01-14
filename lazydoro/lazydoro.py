@@ -73,7 +73,6 @@ def check_working(time):
 
 def check_resting(time):
     if at_desk():
-        print('working')
         return 0, WORKING
     time += 1
     if time > BREAK:
@@ -94,9 +93,9 @@ def tick(time, state):
 
 count = 0
 while True:
-    sleep(0.1)
+    sleep(1)
     time_now, current_state = tick(time_now, current_state)
-    count += 1
-    if count == 10:
-        print(ranges, time_now, current_state)
-        count = 0
+    # count += 1
+    # if count == 10:
+    #     print(ranges, time_now, current_state)
+    #     count = 0
