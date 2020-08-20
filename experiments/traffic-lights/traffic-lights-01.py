@@ -2,9 +2,9 @@ import explorerhat as eh
 from time import sleep
 
 
-RED = eh.lights.red
-AMBER = eh.lights.yellow
-GREEN = eh.lights.green
+RED = eh.light.red
+AMBER = eh.light.yellow
+GREEN = eh.light.green
 ALL_LIGHTS = [RED, AMBER, GREEN]
 
 def show(duration, lights):
