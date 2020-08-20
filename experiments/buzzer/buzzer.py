@@ -10,7 +10,7 @@ buzzer = GPIO.PWM(18, 400)
 
 while True:
     if eh.touch.one.is_pressed():
-        buzzer.start()
+        buzzer.start(50)
     else:
         buzzer.stop()
 
