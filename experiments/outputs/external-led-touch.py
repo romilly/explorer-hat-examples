@@ -3,7 +3,7 @@ from time import sleep
 
 
 while True:
-    if eh.touch.three.is_pressed():
+    if eh.touch.one.is_pressed():
         eh.output.one.on()
     else:
         eh.output.one.off()
