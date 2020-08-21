@@ -23,7 +23,7 @@ def beep():
 while True:
     eh.light.green.off()
     eh.light.red.on()
-    if not eh.touch.one():
+    if not eh.touch.one.is_pressed():
         continue
     sleep(1)
     eh.light.red.off()
