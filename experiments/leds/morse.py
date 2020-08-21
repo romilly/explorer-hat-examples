@@ -61,6 +61,7 @@ LENGTHS = { '.' : 1, '-': 3}
 
 UNIT_DURATION = 0.2
 
+
 def flash(length, value):
     if value == 0:
         eh.light.red.off()
@@ -68,6 +69,7 @@ def flash(length, value):
         return
     eh.light.red.on()
     sleep(length * UNIT_DURATION)
+
 
 def beep(length, value):
     if value == 0:
@@ -87,4 +89,5 @@ def morse(text, send):
             send(2, 0)
         send(4,0)
 
+# we can flash or beep!
 morse('SOS', beep)
