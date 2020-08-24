@@ -75,6 +75,8 @@ def run():
         if valid_pedestrian_request():
             run_pedestrian_cycle()
 
+run()
+
 
 
 
