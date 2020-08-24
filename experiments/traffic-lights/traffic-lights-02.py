@@ -22,13 +22,13 @@ def beep(duration=0.2):
 
 
 while True:
-    eh.light.green.off()
-    eh.light.red.on()
+    GREEN.off()
+    RED.on()
     if not eh.touch.one.is_pressed():
         continue
     sleep(1)
-    eh.light.red.off()
-    eh.light.green.on()
+    RED.off()
+    GREEN.on()
     for i in range(10):
         if i in [6, 7, 8]:
             beep()
