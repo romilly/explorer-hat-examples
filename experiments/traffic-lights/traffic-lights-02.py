@@ -13,11 +13,12 @@ RED = eh.light.red
 GREEN = eh.light.green
 ALL_LIGHTS = [RED, GREEN]
 
+
 def beep(duration=0.2):
     buzzer.start(50)
     sleep(duration)
     buzzer.stop()
-    sleep(1-duration)
+    sleep(1.0-duration)
 
 
 while True:
@@ -29,11 +30,12 @@ while True:
     eh.light.red.off()
     eh.light.green.on()
     for i in range(10):
+        print(i)
         if i in [6, 7, 8]:
             beep()
             continue
         if i == 9:
-            beep(1)
+            beep(1.0)
 
 
 
