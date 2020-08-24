@@ -9,3 +9,5 @@ while True:
     if eh.touch.two.is_pressed():
         eh.motor.one.backward(100)
         sleep(0.1)
+        continue
+    eh.motor.one.stop()
