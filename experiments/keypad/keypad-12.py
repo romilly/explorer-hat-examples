@@ -1,6 +1,8 @@
 import explorerhat as eh
 from time import sleep
 
+CHAR_TABLE = [['1','2','3'],['4','5','6'],['7','8','9'],['*','0','#']]
+
 
 def prepare_column(column):
     for each_col in range(3):
@@ -40,9 +42,13 @@ def wait_for_release():
         sleep(0.1)
 
 
+def decode_key(prc,table):
+    p, row, col = prc
+    return table[row][col]
+
+
 while True:
-    _, row, col = key_pressed()
-    print('row %d col %d pressed' % (row,col))
+    ch = decode_key(key_pressed(), CHAR_TABLE)
+    print('%s pressed' % ch)
     wait_for_release()
-    print('up')
     sleep(0.1)
