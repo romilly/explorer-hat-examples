@@ -28,7 +28,7 @@ def key_pressed():
 
 
 def wait_for_release():
-    while key_pressed()[0]:
+    while check_for_key()[0]:
         sleep(0.1)
 
 
@@ -36,4 +36,5 @@ while True:
     _, row, col = key_pressed()
     print('row %d col %d pressed' % (row,col))
     wait_for_release()
+    print('up')
     sleep(0.1)
