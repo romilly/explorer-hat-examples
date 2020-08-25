@@ -22,11 +22,6 @@ buzzer = GPIO.PWM(18, 50)
 last_activation = perf_counter()-MIN_GAP_DURATION # se no delay if button is pressed immediately
 
 
-def lights_off():
-    for light in LIGHTS:
-        light.off()
-
-
 def beep(duration=0.2):
     buzzer.start(50)
     sleep(duration)
@@ -35,9 +30,11 @@ def beep(duration=0.2):
 
 
 def show(duration, *lights):
-    lights_off()
-    for light in lights:
-        light.on()
+    for light in LIGHTS:
+        if light in lights:
+            light.on()
+        else:
+            light.off()
     sleep(duration)
 
 
@@ -59,7 +56,7 @@ def valid_pedestrian_request():
     global last_activation
     if eh.input.one.read():
         PEDESTRIAN_WHITE.on()
-        while (perf_counter() < last_activation + MIN_GAP_DURATION):
+        while perf_counter() < last_activation + MIN_GAP_DURATION:
             sleep(0.1)
         last_activation = perf_counter()
         return True
@@ -69,7 +66,6 @@ def valid_pedestrian_request():
 
 def run():
     while True:
-        lights_off()
         TRAFFIC_GREEN.on()
         PEDESTRIAN_RED.on()
         if valid_pedestrian_request():
