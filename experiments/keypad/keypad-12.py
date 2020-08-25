@@ -5,9 +5,9 @@ from time import sleep
 def prepare_row(row):
     for each_row in range(4):
         if each_row == row:
-            eh.ouptut.off() # so it's at 5v
+            eh.output[each_row].off() # so it's at 5v
         else:
-            eh.output.on()  # so it's at 0v
+            eh.output[each_row].on()  # so it's at 0v
 
 
 def wait_for_press():
@@ -26,6 +26,7 @@ def anything_pressed():
             if eh.input[col].read():
                 return True
     return False
+
 
 def wait_until_clear():
     pressed = True
