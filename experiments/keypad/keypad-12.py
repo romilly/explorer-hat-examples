@@ -2,50 +2,38 @@ import explorerhat as eh
 from time import sleep
 
 
-def prepare_row(row):
-    for each_row in range(4):
-        if each_row == row:
-            eh.output[each_row].off() # so it's at 5v
+def prepare_column(column):
+    for each_col in range(3):
+        if each_col == column:
+            eh.output[each_col].off() # so it's at 5v
         else:
-            eh.output[each_row].on()  # so it's at 0v
+            eh.output[each_col].on()  # so it's at 0v
 
 
-def wait_for_press():
+def check_for_key():
     while True:
-        for row in range(4):
-            prepare_row(row)
-            for col in range(3):
-                pressed = eh.input[col].read()
-                # print('row  %d col %d pressed %s ' % (row, col, pressed))
+        for col in range(3):
+            prepare_column(col)
+            for row in range(4):
                 if eh.input[col].read():
                     return row, col
-        sleep(1)
+        return False
 
 
-def anything_pressed():
-    for row in range(4):
-        prepare_row(row)
-        for col in range(3):
-            if eh.input[col].read():
-                return True
-    return False
+def key_pressed():
+    p = False
+    while not p:
+        p = check_for_key()
+    return p
 
 
-def wait_until_clear():
-    pressed = True
-    while pressed:
-        pressed = anything_pressed()
-
-
-def wait_for_key():
-    row, col = wait_for_press()
-    print(row, col)
-    sleep(0.1)
-    wait_until_clear()
-    return row, col
+def wait_for_release():
+    while key_pressed():
+        sleep(0.1)
 
 
 while True:
-    row, col = wait_for_key()
+    row, col = key_pressed()
+    wait_for_release()
     print('row %d col %d pressed' % (row,col))
     sleep(0.1)
