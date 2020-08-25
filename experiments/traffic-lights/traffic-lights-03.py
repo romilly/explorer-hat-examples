@@ -51,8 +51,8 @@ def run_pedestrian_cycle():
             beep()
         if i == 9:
             beep(1.0)
-    show(1, PEDESTRIAN_RED)
-    show(1, TRAFFIC_GREEN)
+    show(1, PEDESTRIAN_RED, TRAFFIC_RED, TRAFFIC_AMBER)
+    show(1, PEDESTRIAN_RED, TRAFFIC_GREEN)
 
 
 def valid_pedestrian_request():
@@ -60,7 +60,7 @@ def valid_pedestrian_request():
     if eh.input.one.read():
         PEDESTRIAN_WHITE.on()
         while (perf_counter() < last_activation + MIN_GAP_DURATION):
-            sleep(1)
+            sleep(0.1)
         last_activation = perf_counter()
         return True
     else:
@@ -74,6 +74,7 @@ def run():
         PEDESTRIAN_RED.on()
         if valid_pedestrian_request():
             run_pedestrian_cycle()
+            sleep(0.1)
 
 run()
 
