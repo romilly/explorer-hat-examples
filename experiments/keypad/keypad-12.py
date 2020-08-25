@@ -36,6 +36,7 @@ def wait_until_clear():
 
 def wait_for_key():
     row, col = wait_for_press()
+    print(row, col)
     sleep(0.1)
     wait_until_clear()
     return row, col
