@@ -58,15 +58,13 @@ def run_pedestrian_cycle():
 def valid_pedestrian_request():
     global last_activation
     if eh.input.one.read():
-        print('ouch')
-        sleep(1)
-    #     PEDESTRIAN_WHITE.on()
-    #     while (perf_counter() < last_activation + MIN_GAP_DURATION):
-    #         sleep(0.1)
-    #     last_activation = perf_counter()
-    #     return True
-    # else:
-    #     return False
+        PEDESTRIAN_WHITE.on()
+        while (perf_counter() < last_activation + MIN_GAP_DURATION):
+            sleep(0.1)
+        last_activation = perf_counter()
+        return True
+    else:
+        return False
 
 
 def run():
