@@ -16,24 +16,24 @@ def check_for_key():
             prepare_column(col)
             for row in range(4):
                 if eh.input[col].read():
-                    return row, col
-        return False
+                    return True, row, col
+        return False, 0, 0
 
 
 def key_pressed():
-    p = False
-    while not p:
-        p = check_for_key()
-    return p
+    pressed, row, col = False, 0, 0
+    while not pressed:
+        pressed, row, col = check_for_key()
+    return pressed, row, col
 
 
 def wait_for_release():
-    while key_pressed():
+    while key_pressed()[0]:
         sleep(0.1)
 
 
 while True:
-    row, col = key_pressed()
+    _, row, col = key_pressed()
     wait_for_release()
     print('row %d col %d pressed' % (row,col))
     sleep(0.1)
