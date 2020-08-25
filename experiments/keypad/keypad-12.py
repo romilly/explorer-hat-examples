@@ -14,9 +14,12 @@ def wait_for_press():
     while True:
         for row in range(4):
             prepare_row(row)
+            print('row  %d' % row)
             for col in range(3):
+                print(col)
                 if eh.input[col].read():
                     return row, col
+        sleep(1)
 
 
 def anything_pressed():
