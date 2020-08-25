@@ -10,13 +10,20 @@ def prepare_column(column):
             eh.output[each_col].on()  # so it's at 0v
 
 
+def all_columns_on():
+    for col in range(3):
+        eh.output[col].on()
+
+
 def check_for_key():
     while True:
         for col in range(3):
             prepare_column(col)
             for row in range(4):
                 if eh.input[row].read():
+                    all_columns_on()
                     return True, row, col
+        all_columns_on()
         return False, 0, 0
 
 
