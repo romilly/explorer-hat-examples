@@ -16,7 +16,7 @@ def wait_for_press():
             prepare_row(row)
             for col in range(3):
                 pressed = eh.input[col].read()
-                print('row  %d col %d pressed %s ' % (row, col, pressed))
+                # print('row  %d col %d pressed %s ' % (row, col, pressed))
                 if eh.input[col].read():
                     return row, col
         sleep(1)
