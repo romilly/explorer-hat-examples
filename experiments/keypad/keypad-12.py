@@ -16,6 +16,7 @@ def check_for_key():
             prepare_column(col)
             for row in range(4):
                 if eh.input[row].read():
+                    print(row, col)
                     return True, row, col
         return False, 0, 0
 
