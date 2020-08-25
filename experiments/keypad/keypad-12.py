@@ -20,6 +20,7 @@ def check_for_key():
         for col in range(3):
             prepare_column(col)
             for row in range(4):
+                sleep(0.01)
                 if eh.input[row].read():
                     all_columns_on()
                     return True, row, col
