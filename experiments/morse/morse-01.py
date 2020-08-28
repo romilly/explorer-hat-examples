@@ -19,16 +19,16 @@ MORSE_CODE = {
 }
 
 LENGTHS = {'.': 1, '-': 3}
-
 UNIT_DURATION = 0.2
+ON = 1
+OFF = 0
 
 
 def flash(length, value):
-    if value == 0:
+    if value == OFF:
         eh.light.red.off()
-        sleep(length * UNIT_DURATION)
-        return
-    eh.light.red.on()
+    else:
+        eh.light.red.on()
     sleep(length * UNIT_DURATION)
 
 
@@ -36,10 +36,10 @@ def morse(text):
     for word in text.split():
         for ch in word:
             for m in MORSE_CODE[ch]:
-                flash(LENGTHS[m], 1)
-                flash(1, 0)
-            flash(2, 0)
-        flash(4, 0)
+                flash(LENGTHS[m], ON)
+                flash(1, OFF)
+            flash(2, OFF)
+        flash(4, OFF)
 
 
 morse('SOS')
