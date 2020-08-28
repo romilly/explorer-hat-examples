@@ -1,6 +1,6 @@
-<map version="freeplane 1.5.9">
+<map version="freeplane 1.7.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node FOLDED="false" ID="Freemind_Link_1331878192" CREATED="1266488194781" MODIFIED="1399884031997"><richcontent TYPE="NODE">
+<node FOLDED="false" ID="Freemind_Link_1331878192" CREATED="1266488194781" MODIFIED="1598438489225" LINK="../../explorer-hat/plan/hat-book.mm"><richcontent TYPE="NODE">
 
 <html>
   <head>

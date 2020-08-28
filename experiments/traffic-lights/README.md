@@ -1,6 +1,6 @@
-# Simple traffic light implementation
+# Simple traffic light implementation v2
 
-In this project you can wire up and run a simple traffic light simulator.
+In this project you will wire up and run a simple traffic light simulator.
 
 It's based on UK style traffic lights.
  

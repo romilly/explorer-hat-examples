@@ -2,8 +2,9 @@
 
 Requires a Raspberry Pi and a Pimoroni Explorer Hat.
 
-To learn more about this and other Explorer Hat examples, get 'Explorer Hat Tricks',
-available from Leanpub https://leanpub.com/explorerhattricks
+To learn more about this and other Explorer Hat examples,
+get 'Explorer Hat Tricks', available from Leanpub
+at https://leanpub.com/explorerhattricks
 """
 
 import explorerhat as eh
@@ -16,14 +17,14 @@ GREEN = eh.light.green
 ALL_LIGHTS = [RED, AMBER, GREEN]
 
 
-def show(duration, lights):
-    """Turns on the specified HAT's built-in lights and waits for a given length of time.
+def show(duration, *lights):
+    """Turns on the specified LEDs, then waits for <duration>.
 
-    Lights not in the list will be turned off
+    Lights not in the list of required lights will be turned off
 
     Args:
-        duration: length of time to sleep after lights have been turned on.
-        lights: a list of Explorer Hat light objects to be turned on.
+        duration: # of seconds to sleep after lights are turned on.
+        lights: a list of Explorer Hat LEDs to be turned on.
     """
     for light in ALL_LIGHTS:
         if light in lights:
@@ -33,16 +34,14 @@ def show(duration, lights):
     sleep(duration)
 
 
-def run():
-    """Loop forever displaying the lights in sequence."""
-    while True:
-        show(5, [RED])
-        show(1, [RED, AMBER])
-        show(5,[GREEN])
-        show(1, [RED])
+while True:
+    show(5, RED)
+    show(1, RED, AMBER)
+    show(5, GREEN)
+    show(1, RED)
 
 
-run()
+
 
 
 
