@@ -29,7 +29,11 @@ projects with the original Explorer HAT or the Explorer pHAT.
 1. The parts from a Pimoroni Explorer Hat Parts kit
 1. Optionally, an LDR (Light dependent resistor)
 
-I'll add wiring diagrams and README files as time permits.
+### Time for a shameless plug :)
+
+To get the most from these examples you should get *Explorer Hat Tricks* - an ebook about the Pimoroni Explorer Hat Pro which you can buy on [Leanpub](https://leanpub.com/explorerhattricks/).
+
+I'll add wiring diagrams and README files to this repository as time permits.
 
 ## Installation
 
