@@ -1,6 +1,6 @@
 # Analog projects
 
-These are projects from *Explorer Hat Tricks* - an ebook about the Pimoroni Explorer Hat Pro which you can buy on [Leanpub](https://leanpub.com/explorerhattricks/). That means you get a 40-day no-quibble **money back guarantee**).
+These are projects from *Explorer Hat Tricks*, an ebook about the Pimoroni Explorer Hat Pro which you can buy on [Leanpub](https://leanpub.com/explorerhattricks/). That means you get a 40-day no-quibble **money back guarantee**).
 
 ## Potentiometer
 

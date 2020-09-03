@@ -7,10 +7,9 @@
 
 Please don't ask them for support in relation to this code!
 
-
 ## What this repository contains
 
-These are projects from *Explorer Hat Tricks* - an ebook about the Pimoroni Explorer Hat Pro which you can buy on [Leanpub](https://leanpub.com/explorerhattricks/). That means you get a 40-day no-quibble **money back guarantee**).
+These are projects from *Explorer Hat Tricks*, an ebook about the Pimoroni Explorer Hat Pro which you can buy on [Leanpub](https://leanpub.com/explorerhattricks/). That means you get a 40-day no-quibble **money back guarantee**).
 
 ![Traffic Lights Example](docs/images/traffic-lights.jpg)
 
@@ -21,17 +20,13 @@ These are projects from *Explorer Hat Tricks* - an ebook about the Pimoroni Expl
 
 ## What you will need
 
-1. A [Raspberry Pi](https://www.raspberrypi.org/) model zero/zero W (with headers), B+, 2B, 3B, 3B+ or 4
-running Raspbian buster.
+1. A [Raspberry Pi](https://www.raspberrypi.org/) model zero/zero W (with headers), 2B+, 3B, 3B+ or 4B
+running Raspberry Pi OS.
 1. A [Pimoroni Explorer HAT Pro](https://shop.pimoroni.com/products/explorer-hat). You can run some of the
 projects with the original Explorer HAT or the Explorer pHAT.
 
 1. The parts from a Pimoroni Explorer Hat Parts kit
 1. Optionally, an LDR (Light dependent resistor)
-
-### Time for a shameless plug :)
-
-To get the most from these examples you should get *Explorer Hat Tricks* - an ebook about the Pimoroni Explorer Hat Pro which you can buy on [Leanpub](https://leanpub.com/explorerhattricks/).
 
 I'll add wiring diagrams and README files to this repository as time permits.
 
@@ -64,6 +59,9 @@ The console should look like this:
 All the examples are here, but not all have README files yet.
 
 1. [On-board LEDs](projects/leds/README.md)
+1. [Traffic Lights](projects/traffic-lights/README.md)
+1. [Morse Code Sender](projects/morse/README.md)
+1. [What's the buzz?](projects/buzzer/README.md)
 1. [Analogue Projects](projects/analog/README.md)
 
 
