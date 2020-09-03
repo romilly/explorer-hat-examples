@@ -56,7 +56,7 @@ The console should look like this:
 
 *A work in progress*.
 
-All the examples are here, but not all have README files yet.
+The code for all the examples is here, but not all have README files/wiring diagrams yet.
 
 1. [On-board LEDs](projects/leds/README.md)
 1. [Traffic Lights](projects/traffic-lights/README.md)
