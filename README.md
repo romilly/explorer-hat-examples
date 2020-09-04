@@ -60,7 +60,8 @@ The code for all the examples is here, but not all have README files/wiring diag
 
 1. [On-board LEDs](projects/leds/README.md)
 1. [Traffic Lights](projects/traffic-lights/README.md)
-1. [Touch sensors](projects/touch/)
+1. [Touch sensors](projects/touch/README.md)
+1. [Using the HAT outputs](projects/touch/README.md)
 1. [Morse Code Sender](projects/morse/README.md)
 1. [What's the buzz?](projects/buzzer/README.md)
 1. [Analogue Projects](projects/analog/README.md)
