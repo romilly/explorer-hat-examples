@@ -8,6 +8,6 @@ while True:
     print('temperature is %4.1f degrees C or %4.1f degrees F'
           % (centigrade, farenheit))
     v2 = eh.analog.two.read()
-    light = 'low'  if voltage > 3.5 else 'high'
+    light = 'low'  if v2 > 3.5 else 'high'
     print('light level is %s' % light)
     sleep(1)
