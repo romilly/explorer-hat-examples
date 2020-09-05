@@ -2,7 +2,7 @@ import explorerhat as eh
 from time import sleep
 
 while True:
-    voltage = eh.analog.one.read()
+    voltage = eh.analog.two.read()
     centigrade = 100.0 * (voltage - 0.5)
     farenheit = 32 + 9 * centigrade / 5.0
     print(voltage)
