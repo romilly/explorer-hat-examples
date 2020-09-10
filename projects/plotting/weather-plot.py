@@ -5,9 +5,7 @@ from math import log
 def lux(resistance):
    return 300 * (3.0**-log(resistance/3000.0, 2))
 
-
 r1 = 10000
-
 delay = 1 # for testing
 # delay = 600 # every 10 minutes, for production use!
 
@@ -19,6 +17,5 @@ while True:
     level = lux(resistance)
     print((centigrade, level))
     sleep(delay)
-
 
 
