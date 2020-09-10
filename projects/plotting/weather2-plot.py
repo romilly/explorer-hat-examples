@@ -17,5 +17,3 @@ while True:
     level = 0.04 * lux(resistance)
     print((centigrade, level))
     sleep(delay)
-
-
