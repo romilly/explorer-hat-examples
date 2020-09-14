@@ -8,28 +8,19 @@ It's based on UK style traffic lights.
  
 ### Components
 
-You will need:
+Version 1 uses the on-board LEDs, so you can only run it on the Explorer HAT pro.
 
-1. 1 red LED
-1. 1 yellow (amber) LED
-1. 1 green LED
-1. 3 red jumper wires
-1. 3 brown jumper wires
-1. 3 470 Ohm resistors (colour code Yellow Purple Brown)
+For version 2 you will need a buzzer; use the same wiring as in the earlier buzzer project
 
 ### Wiring
 
-![Traffic Light Wiring diagram](../../docs/images/traffic-lights-01_bb.png)
+![Traffic Light Wiring diagram](../buzzer/images/buzzer_bb.png)
 
 ### Run it
 
-in this directory, run `python3 traffic-lights-01.py `
+in this directory, run `python3 traffic-lights-02.py `
 
 When you've finished, type `Ctrl-C` to exit the program.
-
-## Versions 2 and 3
-
-The code is here; wiring diagrams to follow.
 
 
 

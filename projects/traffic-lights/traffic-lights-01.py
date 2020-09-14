@@ -18,14 +18,6 @@ ALL_LIGHTS = [RED, AMBER, GREEN]
 
 
 def show(duration, *lights):
-    """Turns on the specified LEDs, then waits for <duration>.
-
-    Lights not in the list of required lights will be turned off
-
-    Args:
-        duration: # of seconds to sleep after lights are turned on.
-        lights: a list of Explorer Hat LEDs to be turned on.
-    """
     for light in ALL_LIGHTS:
         if light in lights:
             light.on()
