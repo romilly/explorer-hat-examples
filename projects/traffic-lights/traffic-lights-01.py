@@ -18,11 +18,11 @@ ALL_LIGHTS = [RED, AMBER, GREEN]
 
 
 def show(duration, *lights):
-    for light in ALL_LIGHTS:
-        if light in lights:
-            light.on()
+    for current_light in ALL_LIGHTS:
+        if current_light in lights:
+            current_light.on()
         else:
-            light.off()
+            current_light.off()
     sleep(duration)
 
 
@@ -30,7 +30,7 @@ while True:
     show(5, RED)
     show(1, RED, AMBER)
     show(5, GREEN)
-
+    show(1, AMBER)
 
 
 
