@@ -1,4 +1,4 @@
-# blink the red LED on thr Explorer HAT
+# blink the red LED on the Explorer HAT
 import explorerhat as eh
 from time import sleep
 
