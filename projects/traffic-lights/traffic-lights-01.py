@@ -1,12 +1,3 @@
-"""Simulates a single UK traffic light
-
-Requires a Raspberry Pi and a Pimoroni Explorer Hat.
-
-To learn more about this and other Explorer Hat examples,
-get 'Explorer Hat Tricks', available from Leanpub
-at https://leanpub.com/explorerhattricks
-"""
-
 import explorerhat as eh
 from time import sleep
 
