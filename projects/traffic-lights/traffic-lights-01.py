@@ -30,7 +30,7 @@ while True:
     show(5, RED)
     show(1, RED, AMBER)
     show(5, GREEN)
-    show(1, RED)
+
 
 
 
