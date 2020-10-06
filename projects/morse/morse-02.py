@@ -56,6 +56,6 @@ def morse(text, send):
         send(4,0)
 
 # we can flash or beep!
-morse('SOS',flash) # flashing uses the on-board red LED
+morse('SOS', flash) # flashing uses the on-board red LED
 sleep(5) # wait 5 seconds
 morse('SOS', beep) # beeping uses the buzzer

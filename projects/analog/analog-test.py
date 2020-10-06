@@ -3,5 +3,5 @@ from time import sleep
 
 while True:
     voltage = eh.analog.one.read()
-    print('voltage is %4.2f V' % voltage)
+    print('Voltage is %4.1f V' % voltage)
     sleep(1)

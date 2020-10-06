@@ -11,11 +11,9 @@ delay = 1 # for testing
 
 while True:
     v1 = eh.analog.one.read()
-    centigrade = 100.0 * (v1 - 0.5)
+    celsius = 100.0 * (v1 - 0.5)
     v2 = eh.analog.two.read()
-    resistance = r1 * v2 / (5 - v2)
-    level = lux(resistance)
-    print((centigrade, level))
+    ldr = r1 * v2 / (5 - v2)
+    level = lux(ldr)
+    print((celsius, level))
     sleep(delay)
-
-

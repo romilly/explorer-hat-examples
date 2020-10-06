@@ -23,10 +23,3 @@ while True:
     show(5, GREEN)
     show(1, AMBER)
 
-
-
-
-
-
-
-

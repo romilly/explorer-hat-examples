@@ -3,11 +3,9 @@ from time import sleep
 
 import RPi.GPIO as GPIO
 
-
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.OUT)
 buzzer = GPIO.PWM(18, 50)
-
 
 RED = eh.light.red
 GREEN = eh.light.green
@@ -34,6 +32,3 @@ while True:
             beep()
         if i == 9:
             beep(1.0)
-
-
-
