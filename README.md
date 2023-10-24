@@ -2,14 +2,14 @@
 
 ## Warning
 
-The examples in this repository rely on the Pimoronmi library for the Explorer Hat.
+The examples in this repository rely on the Pimoroni library for the Explorer Hat.
 I believe that the library will need to be updated for the Raspberry Pi 5
-and the latest version of the OPerating SYstem.
+and the latest version of the Operating SYstem.
 
 As soon as I have any information about the timescale for the update I will share it here and on X.
 
-If you're using and earlier model of the Pi,
-and are not using the lateest version of the Operating system, everything here should work.
+If you're using an earlier model of the Pi,
+and are not using the latest version of the Operating system, everything here should work.
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K61CLW1)
 
